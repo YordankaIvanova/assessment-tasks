@@ -1,0 +1,101 @@
+@import './variables';
+@import './flex-layout';
+@import './media-queries';
+
+// Page style
+// ma - stands for the name of the project Meeting App
+
+body {
+    display: flex;
+    background-image: url("../../icons/blue-background.jpg");
+    background-size: cover;
+    color: $white;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0; 
+    padding: 0;
+    justify-content: center;
+}
+
+.ma-container {
+    display: flex;
+    height: 70%;
+}
+
+.ma-appointments-container {
+
+    .ma-appointment {
+        margin-bottom: 10px;
+        padding: 15px;
+
+        &, div:nth-child(2) {
+            justify-content: space-between;
+        }
+        
+        .ma-oppointment-title {
+            margin-bottom: 6px;
+        }
+        
+        .ma-appointment-join-btn {
+            border: 1px solid $white;
+            color: $white;
+        }
+    }
+}
+
+.ma-next {
+    background-color: $blue;
+    opacity: 1;
+}
+
+.ma-later {
+    background-color: $grey;
+    opacity: 0.5;
+}
+
+.ma-manage-container {
+    flex: 1;
+
+    .ma-time {
+        margin-bottom: 30px;
+    }
+
+    .ma-meeting-related-buttons {
+        flex-grow: 1;
+        width: 100%;
+        height: 40%;
+        justify-content: center;
+
+        .ma-buttons-container {
+            width: 90%;
+            height: 50%;
+        }
+
+        > div > div {
+            text-align: center;
+        }
+
+        .ma-button-icon {
+            border: 1px solid $white;
+            margin-bottom: 10px;
+            line-height: 0vh;
+            height: 0;
+            border-radius: 50%;
+        }
+    }
+
+    .ma-volume-slider {
+        margin-top: 30px;
+    }
+}
+
+//Scroll bar 
+
+::-webkit-scrollbar {
+   width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $white; 
+    border-radius: 10px;
+}

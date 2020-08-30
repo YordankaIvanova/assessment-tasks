@@ -1,0 +1,242 @@
+//  Media queries
+
+@media screen and (min-width: 768px) {
+    body {
+        height: 100vh;
+        width: 100vw;
+
+        .ma-appointments-container, .ma-meeting-related-buttons {
+            overflow-y: scroll;
+        }
+
+        .ma-manage-container {
+            .ma-meeting-related-buttons {
+
+                > div > div {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .ma-meeting-related-buttons  {
+
+        > div > div {
+            width: 100%;
+            margin-bottom: 35px;
+        }
+    }
+
+
+    .ma-manage-container  {
+
+        .ma-meeting-related-buttons {
+
+            .ma-button-icon {
+                font-size: 30px;
+                width: 32%;
+                padding: 15% 0;
+            }
+        }
+    }
+
+    .ma-appointments-container {
+
+        .ma-appointment {
+            font-size: 16px;
+
+            .ma-oppointment-title {
+                font-size: 23px;
+            }
+
+            .ma-appointment-join-btn {
+                padding: 8px 27px;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .ma-manage-container {
+
+        .ma-meeting-related-buttons {
+            > div > div {
+                font-size: 15px;
+                width: 22%;
+                margin: 20px;
+            }
+
+            .ma-button-icon {
+                width: 65%;
+                padding: 33% 0;
+                font-size: 22px;
+            }
+        }
+    }
+
+    .ma-appointments-container {
+
+        .ma-appointment {
+            font-size: 13px;
+
+            .ma-oppointment-title {
+                font-size: 21px;
+            }
+
+            .ma-appointment-join-btn {
+                padding: 6px 24px;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+    .ma-manage-container {
+
+        .ma-time {
+            font-size: 35px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .ma-container {
+        margin-top: 50px;
+        flex-direction: column;
+
+        .ma-appointments-container {
+            order: 2;
+        }
+
+        .ma-manage-container {
+            order: 1;
+
+            .ma-button-icon {
+                width: 16%;
+                padding: 8% 0;
+            }
+
+            .ma-time {
+                font-size: 50px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .ma-appointments-container {
+        flex: 2;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    .ma-appointments-container {
+        flex: 1;
+    }
+}
+
+@media screen and (min-width: 1201px) {
+    .ma-appointments-container {
+        flex: 1;
+    }
+
+    .ma-time {
+        font-size: 60px;
+    }
+}
+
+@media screen and (min-width: 1700px) {
+    .ma-manage-container {
+        .ma-meeting-related-buttons {
+
+            > div > div {
+                font-size: 21px;
+            }
+
+            .ma-button-icon {
+                font-size: 32px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 999px) {
+    .ma-container {
+        width: 75%;
+    }
+
+    .ma-appointments-container .ma-appointment {
+        height: 120px;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1999px) {
+    .ma-container {
+        width: 60%;
+    }
+
+    .ma-appointments-container .ma-appointment {
+        height: 120px;
+    }
+}
+
+@media screen and (min-width: 2000px) and (max-width: 2999px) {
+    .ma-container {
+        width: 40%;
+    }
+
+    .ma-appointments-container {
+        .ma-appointment {
+            height: 120px;
+        }
+    }
+
+    .ma-meeting-related-buttons {
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 3000px) {
+    .ma-container {
+        width: 40%;
+
+        .ma-appointments-container {
+
+            .ma-appointment {
+                height: 190px;
+                font-size: 27px;
+
+                .ma-oppointment-title {
+                    font-size: 36px;
+                }
+
+                .ma-appointment-join-btn {
+                    padding: 10px 35px;
+                    font-size: 31px;
+                }
+            }
+        }
+
+        .ma-manage-container {
+            .ma-time {
+                font-size: 80px;
+            }
+
+            .ma-meeting-related-buttons {
+                align-items: center;
+                
+                .ma-button-icon {
+                    font-size: 46px;
+                }
+
+                > div > div {
+                    font-size: 26px;
+                }
+            }
+        }
+    }  
+}

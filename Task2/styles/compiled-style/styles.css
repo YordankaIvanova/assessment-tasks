@@ -1,0 +1,276 @@
+.flex-layout {
+  display: flex;
+  flex-shrink: 0;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-center {
+  align-self: center;
+  align-items: center;
+}
+
+.flex-self-end {
+  align-self: flex-end;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    height: 100vh;
+    width: 100vw;
+  }
+  body .ma-appointments-container, body .ma-meeting-related-buttons {
+    overflow-y: scroll;
+  }
+  body .ma-manage-container .ma-meeting-related-buttons > div > div {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .ma-meeting-related-buttons > div > div {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+
+  .ma-manage-container .ma-meeting-related-buttons .ma-button-icon {
+    font-size: 30px;
+    width: 32%;
+    padding: 15% 0;
+  }
+
+  .ma-appointments-container .ma-appointment {
+    font-size: 16px;
+  }
+  .ma-appointments-container .ma-appointment .ma-oppointment-title {
+    font-size: 23px;
+  }
+  .ma-appointments-container .ma-appointment .ma-appointment-join-btn {
+    padding: 8px 27px;
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .ma-manage-container .ma-meeting-related-buttons > div > div {
+    font-size: 15px;
+    width: 22%;
+    margin: 20px;
+  }
+  .ma-manage-container .ma-meeting-related-buttons .ma-button-icon {
+    width: 65%;
+    padding: 33% 0;
+    font-size: 22px;
+  }
+
+  .ma-appointments-container .ma-appointment {
+    font-size: 13px;
+  }
+  .ma-appointments-container .ma-appointment .ma-oppointment-title {
+    font-size: 21px;
+  }
+  .ma-appointments-container .ma-appointment .ma-appointment-join-btn {
+    padding: 6px 24px;
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .ma-manage-container .ma-time {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .ma-container {
+    margin-top: 50px;
+    flex-direction: column;
+  }
+  .ma-container .ma-appointments-container {
+    order: 2;
+  }
+  .ma-container .ma-manage-container {
+    order: 1;
+  }
+  .ma-container .ma-manage-container .ma-button-icon {
+    width: 16%;
+    padding: 8% 0;
+  }
+  .ma-container .ma-manage-container .ma-time {
+    font-size: 50px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .ma-appointments-container {
+    flex: 2;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .ma-appointments-container {
+    flex: 1;
+  }
+}
+@media screen and (min-width: 1201px) {
+  .ma-appointments-container {
+    flex: 1;
+  }
+
+  .ma-time {
+    font-size: 60px;
+  }
+}
+@media screen and (min-width: 1700px) {
+  .ma-manage-container .ma-meeting-related-buttons > div > div {
+    font-size: 21px;
+  }
+  .ma-manage-container .ma-meeting-related-buttons .ma-button-icon {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 999px) {
+  .ma-container {
+    width: 75%;
+  }
+
+  .ma-appointments-container .ma-appointment {
+    height: 120px;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1999px) {
+  .ma-container {
+    width: 60%;
+  }
+
+  .ma-appointments-container .ma-appointment {
+    height: 120px;
+  }
+}
+@media screen and (min-width: 2000px) and (max-width: 2999px) {
+  .ma-container {
+    width: 40%;
+  }
+
+  .ma-appointments-container .ma-appointment {
+    height: 120px;
+  }
+
+  .ma-meeting-related-buttons {
+    align-items: center;
+  }
+}
+@media screen and (min-width: 3000px) {
+  .ma-container {
+    width: 40%;
+  }
+  .ma-container .ma-appointments-container .ma-appointment {
+    height: 190px;
+    font-size: 27px;
+  }
+  .ma-container .ma-appointments-container .ma-appointment .ma-oppointment-title {
+    font-size: 36px;
+  }
+  .ma-container .ma-appointments-container .ma-appointment .ma-appointment-join-btn {
+    padding: 10px 35px;
+    font-size: 31px;
+  }
+  .ma-container .ma-manage-container .ma-time {
+    font-size: 80px;
+  }
+  .ma-container .ma-manage-container .ma-meeting-related-buttons {
+    align-items: center;
+  }
+  .ma-container .ma-manage-container .ma-meeting-related-buttons .ma-button-icon {
+    font-size: 46px;
+  }
+  .ma-container .ma-manage-container .ma-meeting-related-buttons > div > div {
+    font-size: 26px;
+  }
+}
+body {
+  display: flex;
+  background-image: url("../../icons/blue-background.jpg");
+  background-size: cover;
+  color: #fff;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+
+.ma-container {
+  display: flex;
+  height: 70%;
+}
+
+.ma-appointments-container .ma-appointment {
+  margin-bottom: 10px;
+  padding: 15px;
+}
+.ma-appointments-container .ma-appointment, .ma-appointments-container .ma-appointment div:nth-child(2) {
+  justify-content: space-between;
+}
+.ma-appointments-container .ma-appointment .ma-oppointment-title {
+  margin-bottom: 6px;
+}
+.ma-appointments-container .ma-appointment .ma-appointment-join-btn {
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.ma-next {
+  background-color: #087db3;
+  opacity: 1;
+}
+
+.ma-later {
+  background-color: #555;
+  opacity: 0.5;
+}
+
+.ma-manage-container {
+  flex: 1;
+}
+.ma-manage-container .ma-time {
+  margin-bottom: 30px;
+}
+.ma-manage-container .ma-meeting-related-buttons {
+  flex-grow: 1;
+  width: 100%;
+  height: 40%;
+  justify-content: center;
+}
+.ma-manage-container .ma-meeting-related-buttons .ma-buttons-container {
+  width: 90%;
+  height: 50%;
+}
+.ma-manage-container .ma-meeting-related-buttons > div > div {
+  text-align: center;
+}
+.ma-manage-container .ma-meeting-related-buttons .ma-button-icon {
+  border: 1px solid #fff;
+  margin-bottom: 10px;
+  line-height: 0vh;
+  height: 0;
+  border-radius: 50%;
+}
+.ma-manage-container .ma-volume-slider {
+  margin-top: 30px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 10px;
+}
+
+/*# sourceMappingURL=styles.css.map */

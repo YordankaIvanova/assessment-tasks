@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Task 1 Kendo UI Accordions</title>
+
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2020.2.513/styles/kendo.default-v2.min.css"/>
+    <link rel="stylesheet" href="../../styles/style.css" />
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2020.2.513/js/kendo.all.min.js"></script>
+</head>
+<body>
+  
+  <div id="accordion1"></div>
+  <div id="accordion2" class="k-margin"></div>
+
+  <div id="container1">
+    <div data-role="accordion1" data-source="dataSource" data-animation="animation"></div>
+  </div>
+
+  <div id="container2">
+    <div data-role="accordion2" data-source="dataSource" data-animation="animation"></div>
+  </div>
+
+  <script src="../../src/accordion.js"></script>
+  <script>
+
+    kendo.bind($("#container1"));
+    kendo.bind($("#container2"));
+
+    $("#accordion1").kendoAccordion({
+        animation: {
+          expand: {
+            effects: "fade:in",
+            duration: 200
+          },
+          collapse: {
+            effects: "fade:out",
+            duration: 200
+          }
+        },
+        dataSource: [ 
+            { id: 1, text: "Section 1", content: 
+                { id: 1, 
+                    text: `Mauris mauris ante, blandit et, ultrices a, 
+                    suscipit eget, quam. Integer ut neque.` 
+                } 
+            }, 
+            { id: 2, text: "Section 2" }, 
+
+            { id: 3, text: "Section 3", content: 
+                { id: 1, 
+                    text: `Sed non urna. Donec et ante. Phasellus eu ligula. 
+                    Vestibulum sit amet purus. Vivamus hendrerit, dolor at 
+                    aliquet laoreet, mauris`
+                } 
+            }
+        ]
+    });
+
+    $("#accordion2").kendoAccordion({
+        animation: { },
+        dataSource: [ 
+            { id: 1, text: "Header 1", content: 
+            { id: 1, 
+                text: `Mauris mauris ante, blandit et, ultrices a, 
+                suscipit eget, quam. Integer ut neque.` 
+            } 
+            }, 
+            { id: 2, text: "Header 2" }
+      ]
+    });
+  </script>
+
+</body>
+</html>

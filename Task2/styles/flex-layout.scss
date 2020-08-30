@@ -1,0 +1,27 @@
+// Flexbox layout
+
+.flex-layout {
+    display: flex;
+    flex-shrink: 0;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-center {
+    align-self: center;
+    align-items: center;
+}
+
+.flex-self-end {
+    align-self: flex-end;
+}
